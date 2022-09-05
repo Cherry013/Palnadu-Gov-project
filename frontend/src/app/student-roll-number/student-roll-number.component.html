@@ -1,0 +1,39 @@
+<div class="body">
+    <div class="center-content">
+        <h1 *ngIf="!Displaymarks">Marks</h1>
+        <h1 *ngIf="Displaymarks">Result</h1>
+        <div class="form">
+            <div class="rollno">
+                <input type="text" id = "rollno" name = "rollno" placeholder="Roll Number" required #rollno>
+            </div>
+            <div class="submit mb-4">
+                <input type="submit" value="Get the marks" (click)="getMarksOfAStudent(rollno.value)">
+            </div>
+            <table class="table table-sm table-striped table-primary rounded"  *ngIf="Displaymarks">
+                <thead>
+                  <tr>
+                    <th scope="col" >Roll Number</th>
+                    <th scope="col">{{StudentObject.Student_Rollnumber}}</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">CompilerDesign</th>
+                    <td>{{StudentObject.CompilerDesign}}</td>
+
+                  </tr>
+                  <tr>
+                    <th scope="row">OperatingSystem</th>
+                    <td>{{StudentObject.OperatingSystem}}</td>
+
+                  </tr>
+                  <tr>
+                    <th scope="row">ComputerNetworks</th>
+                    <td>{{StudentObject.ComputerNetworks}}</td>
+
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+    </div>
+</div>
