@@ -1,0 +1,42 @@
+<div class="body center">
+  <h1 class="text-primary text-center">Child Labour</h1>
+  <div class="main p-3 d-flex card">
+    <div class="center m-1">
+      <label class="text-left text-muted w-15 m-0 mr-1">Name</label>
+      <div class="mx-3">:</div>
+      <input required class="form-control w-75" type="text" [(ngModel)]="Name" >
+    </div>
+    <div class="center m-1">
+      <label class="text-left text-muted w-15 m-0 mr-1">Age</label>
+      <div class="mx-3">:</div>
+      <input required class="form-control w-75" type="text" [(ngModel)]="Age" >
+    </div>
+    <div class="center m-1">
+      <label class="text-left text-muted w-15 m-0 mr-1">Gender</label>
+      <div class="mx-3">:</div>
+      <div class="w-75">
+        <input required type="radio" [(ngModel)]="Gender" name="Gender" value ="Male" id="GenderMale" class="mx-2"><label for="GenderMale">Male</label><br>
+        <input required type="radio" [(ngModel)]="Gender" name="Gender" value ="Female" id="GenderFemale" class="mx-2"><label for="GenderFemale">Female</label><br>
+        <input required type="radio" [(ngModel)]="Gender" name="Gender" value ="Other" id="GenderOther" class="mx-2"><label for="GenderOther">Other</label>
+      </div>
+    </div>
+    <div class="center m-1">
+      <label class="text-left text-muted w-15 m-0 mr-1">Father Name</label>
+      <div class="mx-3">:</div>
+      <input required class="form-control w-75" type="text" [(ngModel)]="Father_Name" >
+    </div>
+    <div class="center m-1">
+      <label class="text-left text-muted w-15 m-0 mr-1">Guardian</label>
+      <div class="mx-3">:</div>
+      <input required class="form-control w-75" type="text" [(ngModel)]="Guardian" >
+    </div>
+    <div class="center m-1">
+      <label class="text-left text-muted w-15 m-0 mr-1">Mother Name</label>
+      <div class="mx-3">:</div>
+      <input required class="form-control w-75" type="text" [(ngModel)]="Mother_Name" >
+    </div>
+  </div>
+  <div class="mx-auto center m-5">
+    <button type="button" class="btn btn-primary" (click)="Next()">Next</button>
+  </div>
+</div>

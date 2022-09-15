@@ -1,0 +1,61 @@
+<div class="body center">
+  <h1 class="text-primary text-center">Cast and Relegion Details</h1>
+  <div class="main p-3 d-flex card">
+    <!-- code -->
+
+    <div class="center m-1">
+      <label class="text-left text-muted w-40 m-0 mr-1"> Father Occuption</label>
+      <div class="mx-3">:</div>
+      <div class="d-flex w-60">
+        <select class="form-control" [(ngModel)]="Father_Work">
+          <option value="Labour">Labour</option>
+          <option value="House_Hold">House hold</option>
+          <option value="Working_in_hotels">Working in hotels</option>
+          <option value="Labour_Field_work">Field work</option>
+          <option value="Others">Others</option>
+        </select>
+      </div>
+    </div>
+    <div class="center m-1">
+      <label class="text-left text-muted w-40 m-0 mr-1"> Mother Occuption</label>
+      <div class="mx-3">:</div>
+      <div class="d-flex  w-60">
+        <select class="form-control" [(ngModel)]="Mother_Work">
+          <option value="Labour">labour</option>
+          <option value="House_Hold">house hold</option>
+          <option value="Working_in_hotels">working in hotels</option>
+          <option value="Labour_Field_work">feild work</option>
+          <option value="Others">others</option>
+        </select>
+      </div>
+    </div>
+    <div class="center m-1">
+      <label class="text-left text-muted w-40 m-0 mr-1"> Caste</label>
+      <div class="mx-3">:</div>
+      <div class="d-flex  w-60">
+        <select class="form-control" [(ngModel)]="Cast">
+          <option value="SC">SC</option>
+          <option value="ST">ST</option>
+          <option value="BC">BC</option>
+          <option value="OC">OC</option>
+        </select>
+      </div>
+    </div>
+    <div class="center m-1">
+      <label class="text-left text-muted w-40 m-0 mr-1">Religion</label>
+      <div class="mx-3">:</div>
+      <div class="d-flex  w-60">
+        <select class="form-control" [(ngModel)]="Religion">
+          <option value="Hinduism">Hinduism</option>
+          <option value="Islam">Islam</option>
+          <option value="Christainity">Christainity</option>
+          <option value="others">others</option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <div class="mx-auto center m-5">
+    <button type="button" class="btn btn-primary" (click)='Next()' >Next</button>
+  </div>
+
+</div>

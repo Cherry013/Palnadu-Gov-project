@@ -1,0 +1,47 @@
+
+.img{
+    background-image: url("../../assets/Svgs/Welcome-Model-1.svg");
+    height: 300px;
+    width: 300px;
+    background-position: center;
+    background-size: cover;
+}
+.center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.circles
+{
+    width:200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+}
+.one{
+    top:-100px;
+    left:-100px;
+} .two{
+     background-color: #ff6584;
+    left :-100px;
+    top:640px;
+}
+.three{
+    background-color: var(--bs-secondary);
+    top:300px;
+    left:1450px;
+}
+.text-center{
+    font-size:25px;
+    margin:30px 0;
+}
+.btn{
+    background-color: #ff6584
+}
+@media screen and (max-width: 900px) {
+    .three{
+        left:700px;
+    }
+}

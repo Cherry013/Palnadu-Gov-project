@@ -1,0 +1,55 @@
+<div class="body center">
+    <h1 class="text-primary text-center">Work</h1>   
+    <div class="main p-3 d-flex card">
+        <div class="center m-1">          
+            <label class="text-left text-muted w-40 m-0 mr-1"> Type of Work</label>
+            <div class="mx-3">:</div>
+            <div class="d-flex  w-60">
+            <select class="form-control" [(ngModel)]="Type_of_Work">
+               <option value="shop/Pvt">shop/Pvt Sector</option>
+               <option value="Railway Station">Railway Station</option>
+               <option value="Hotels">Hotels</option>
+               <option value="Begging">Begging</option>
+               <option value="Brick_Klins">Brick Klins</option>
+               <option value="Factories">Factories</option>
+               <option value="Construction_Works">Construction Works</option>
+               <option value="others">others</option>
+           </select>
+     </div>
+     </div>
+          <div class="center m-1">
+            <label class="text-left text-muted w-40 m-0 mr-1">School Joined</label>
+            <div class="mx-3">:</div>
+            <div class="d-flex  w-60">
+            <input type="radio" name="child" id="childYes" value="He is a child" [(ngModel)]="child" (click)="Yes()"><label for="childYes" class="mx-1">Yes</label>
+            <input type="radio" name="child" id="childNo" value="He is not a child"  [(ngModel)]="child"  (click)="No()"><label for="childNo" class="mx-1">No</label>
+          </div>
+          </div>
+          <div class="center m-1" *ngIf="Display">
+            <label class="text-left text-muted w-40 m-0 mr-1">Studied class</label>
+            <div class="mx-3">:</div>
+            <input class="form-control w-60" type="text" [(ngModel)]="StudiedClass">
+          </div>
+          
+          <div class="center m-1">
+            <label class="text-left text-muted w-40 m-0 mr-1">Class to be Admitted</label>
+            <div class="mx-3">:</div>
+            <input class="form-control w-60" type="text" [(ngModel)]="AdmittedClass">
+            </div>
+            <div class="center m-1">
+                <label class="text-left text-muted w-40 m-0 mr-1">Nearest School</label>
+                <div class="mx-3">:</div>
+                <input class="form-control w-60" type="text" [(ngModel)]="NearestSchool">
+                </div>
+          <div class="center m-1">
+             <label class="text-left text-muted w-40 m-0 mr-1" for="SchoolAddress">School Address</label>
+             <div class="mx-3">:</div>
+             <div class="d-flex w-60">
+             <textarea row="20" cols="25" class="form-control" [(ngModel)]="SchoolAddress" id="SchoolAddress" ></textarea>
+          </div>
+          </div>
+        </div>
+          <div class="mx-auto center m-5">
+            <button type="button" class="btn btn-primary" (click)="Next()">Next</button>
+          </div>
+        </div>

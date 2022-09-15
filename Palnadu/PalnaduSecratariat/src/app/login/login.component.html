@@ -1,0 +1,23 @@
+
+        <div class="div-main">
+            <div class="container">
+                <h1>Login</h1>
+    
+                <div class="p-sc">
+                    <i class="fa-solid fa-user sc"></i>
+                    <input type="text" id="sc" placeholder="Secretariats code" [(ngModel)]="User">
+                </div>
+    
+                <div class="p-sc">
+                    <i class="fa-solid fa-unlock sc"></i>
+                    <input type="password" id="password" placeholder="Password"[(ngModel)]="Password">
+                </div>
+                <div class="s-p">
+                    <input type="checkbox" id="show-password">
+                    <label for="show-password" >Show Password</label>
+                </div>
+                <div class="btn">
+                    <button class="btn my-2" (click)="login()">Login</button>
+                    <p class="alert alert-danger" *ngIf="errorMsg">{{error}}</p>
+                </div>
+            </div>
