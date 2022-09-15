@@ -1,0 +1,82 @@
+<div class="container-fluid">
+    <div class="row flex-nowrap  overflow-hidden">
+        <div class="col-auto px-0 overflow-scroll">
+            <app-sidebar (Senddata)="taking($event)"></app-sidebar>
+        </div>
+        <main class="col ps-md-2 pt-2">
+            <nav class="navbar navbar-light bg-light">
+                <div class="container-fluid d-flex justify-content-space-between align-items-center">
+                    <a (click)="Toggle()" data-bs-target="#sidebar" data-bs-toggle="collapse"
+                        class="border rounded-3 p-1 text-decoration-none float-right px-2"><i [class]="Right"></i></a>
+                    <div class="govt">Street Children Information</div>
+                    <div class="userdetails center">
+                        <p class="username m-0 mx-2 Noto">{{Username}}</p>
+                        <div class="user center r-50 border border-warning"></div>
+                    </div>
+                </div>
+
+            </nav>
+            <div class="p-1 w-100 my-3 grid">
+                <!-- <div class="card mx-1  wh-150 center border border-2 border-primary text-white my-2 bg-primary">
+                    <p class="m-0 ">20</p>
+                    <span class="m-0 Noto">Mandal</span>
+                </div>
+                <div class="card mx-1  wh-150 center border border-warning text-white my-2 bg-warning">
+                    <p class="m-0 ">20</p>
+                    <span class="m-0 Noto">Total Count</span>
+                </div>
+                <div class="card mx-1  wh-150 center border border-success text-white my-2 bg-success">
+                    <p class="m-0 ">20</p>
+                    <span class="m-0 Noto">Total Reports</span>
+                </div>
+                <div class="card mx-1  wh-150 center border border-danger text-white my-2 bg-danger">
+                    <p class="m-0 ">15</p>
+                    <span class="m-0 Noto text-center">Todays<br> Reports</span>
+                </div> -->
+                <div class="card mx-1 wh-150 center border  border-pink text-white my-2 bg-pink">
+                    <p class="m-0 ">{{Begging}}</p>
+                    <span class="m-o Noto">Begging</span>
+                </div>
+                <div class="card mx-1 wh-150 center border border-2 border-primary text-white my-2 bg-primary">
+                    <p class="m-0 ">{{Hotels}}</p>
+                    <span class="m-o Noto">Working at Hotel</span>
+                </div>
+                <div class="card mx-1  wh-150 center border border-warning text-white my-2 bg-warning">
+                    <p class="m-0 ">{{pvt}}</p>
+                    <span class="m-0 Noto text-center">Shop/PVT sector</span>
+                </div>
+                <div class="card mx-1  wh-150 center border border-success text-white my-2 bg-success">
+                    <p class="m-0 ">{{rail}}</p>
+                    <span class="m-0 Noto">RailWay Station</span>
+                </div>
+                <div class="card mx-1  wh-150 center border border-danger text-white my-2 bg-danger">
+                    <p class="m-0 ">{{brick}}</p>
+                    <span class="m-0 Noto">Brick klins</span>
+                </div>
+                <div class="card mx-1  wh-150 center border border-pink text-white my-2 bg-pink">
+                    <p class="m-0 ">{{Factories}}</p>
+                    <span class="m-0 Noto">Factories</span>
+                </div>
+                <div class="card mx-1  wh-150 center border border-primary text-white my-2 bg-primary">
+                    <p class="m-0 ">{{Construction}}</p>
+                    <span class="m-0 Noto">Constrction Workers</span>
+                </div>
+                <div class="card mx-1  wh-150 center border border-warning text-white my-2 bg-warning">
+                    <p class="m-0 ">{{other}}</p>
+                    <span class="m-0 Noto">Others</span>
+                </div>
+            </div>
+            <hr>
+            <div class="Inputs">
+                <div class="d-flex  w-60">
+                    <select class="form-control">
+                        <option value="SC">SC</option>
+                        <option value="ST">ST</option>
+                        <option value="BC">BC</option>
+                        <option value="OC">OC</option>
+                    </select>
+                </div>
+            </div>
+        </main>
+    </div>
+</div>
