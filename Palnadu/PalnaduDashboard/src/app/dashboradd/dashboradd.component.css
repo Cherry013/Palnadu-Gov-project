@@ -1,5 +1,5 @@
 .user {
-    background-image: url("https://i.pinimg.com/custom_covers/200x150/782148728973906783_1626303160.jpg");
+    background-image: url("https://images.livemint.com/img/2020/08/01/1600x900/20200611074L_1596271822944_1596271837060.jpg");
     width: 50px;
     height: 50px;
     background-position: center;
@@ -20,6 +20,7 @@ nav i {
     box-shadow: -7px 8px 27px -11px var(--bs-primary);
     transition: all 2s;
     cursor: pointer;
+    text-align: center;
 }
 
 .card.border-warning {
@@ -89,4 +90,110 @@ nav i {
 .border-pink {
     border: 1px solid var(--bs-pink);
     outline: none;
+}
+.form-control {
+    width: 100%;
+}
+
+@media (max-width: 851px) {
+    .grid {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 9px;
+    }
+
+    .card.border-primary {
+        width: 200px;
+        height: 150px;
+    }
+    
+    .card.border-warning {
+        width: 200px;
+        height: 150px;
+    }
+    
+    .card.border-success {
+        width: 200px;
+        height: 150px;
+    }
+    
+    .card.border-danger {
+        width: 200px;
+        height: 150px;
+    }
+    .card.border-pink {
+        width: 200px;
+        height: 150px;
+    }
+}
+
+@media (max-width: 700px) {
+    .grid {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: repeat(3, 0fr);
+        grid-gap: 15px;
+    }
+
+    .card.border-primary {
+        width: 160px;
+        height: 120px;
+    }
+    
+    .card.border-warning {
+        width: 160px;
+        height: 120px;
+    }
+    
+    .card.border-success {
+        width: 160px;
+        height: 120px;
+    }
+    
+    .card.border-danger {
+        width: 160px;
+        height: 120px;
+    }
+    .card.border-pink {
+        width: 160px;
+        height: 120px;
+    }
+}
+
+@media (max-width: 501px) {
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 0fr);
+        grid-gap: 10px;
+        -ms-grid-column-align: center;
+    }
+
+    .card.border-primary {
+        width: 155px;
+        height: 125px;
+    }
+    
+    .card.border-warning {
+        width: 155px;
+        height: 125px;
+    }
+    
+    .card.border-success {
+        width: 155px;
+        height: 125px;
+    }
+    
+    .card.border-danger {
+        width: 155px;
+        height: 125px;
+    }
+    .card.border-pink {
+        width: 155px;
+        height: 125px;
+    }
+
 }

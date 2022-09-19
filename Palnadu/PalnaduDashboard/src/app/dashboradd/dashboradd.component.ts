@@ -9,7 +9,7 @@ import { GetvaluesService } from '../getvalues.service';
 })
 export class DashboraddComponent implements OnInit {
   Right = "fa-solid fa-arrow-right";
-  Username = "Naina"
+  Username = ""
   Begging = "0";
   Hotels = "0";
   pvt = "0";

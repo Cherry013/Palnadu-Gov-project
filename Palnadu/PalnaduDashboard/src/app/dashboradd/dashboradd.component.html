@@ -1,5 +1,5 @@
 <div class="container-fluid">
-    <div class="row flex-nowrap  overflow-hidden">
+    <div class="row flex-nowrap">
         <div class="col-auto px-0 overflow-scroll">
             <app-sidebar (Senddata)="taking($event)"></app-sidebar>
         </div>
@@ -7,7 +7,7 @@
             <nav class="navbar navbar-light bg-light">
                 <div class="container-fluid d-flex justify-content-space-between align-items-center">
                     <a (click)="Toggle()" data-bs-target="#sidebar" data-bs-toggle="collapse"
-                        class="border rounded-3 p-1 text-decoration-none float-right px-2"><i [class]="Right"></i></a>
+                        class="cbtn border rounded-3 p-1 text-decoration-none float-right px-2"><i [class]="Right"></i></a>
                     <div class="govt">Street Children Information</div>
                     <div class="userdetails center">
                         <p class="username m-0 mx-2 Noto">{{Username}}</p>
@@ -68,7 +68,7 @@
             </div>
             <hr>
             <div class="Inputs">
-                <div class="d-flex  w-60">
+                <div class="d-flex">
                     <select class="form-control">
                         <option value="SC">SC</option>
                         <option value="ST">ST</option>
