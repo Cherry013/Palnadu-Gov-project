@@ -12,7 +12,8 @@ import { TablesComponent } from './tables/tables.component';
 import { GetvaluesService } from './getvalues.service';
 import { HttpClientModule } from '@angular/common/http';
 import { ChartsCComponent } from './charts-c/charts-c.component';
-import { AccumulationAnnotationService, AccumulationDataLabelService, AccumulationLegendService, AccumulationTooltipService, PieSeriesService } from '@syncfusion/ej2-angular-charts';
+import { AccumulationAnnotationService, AccumulationDataLabelService, AccumulationLegendService,
+   AccumulationTooltipService, PieSeriesService } from '@syncfusion/ej2-angular-charts';
 
 
 @NgModule({
