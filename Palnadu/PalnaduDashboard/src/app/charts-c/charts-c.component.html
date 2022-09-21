@@ -1,8 +1,11 @@
 <div class="Chart-1">
     <ejs-accumulationchart id="chart-container" [legendSettings]='legendSettings' [tooltip]="tooltip">
         <e-accumulation-series-collection>
-            <e-accumulation-series [dataSource]='piedata' xName='x' yName='y' type='Pie'>
+            <e-accumulation-series [dataSource]='piedata' xName='x' yName='y' type='Pie'innerRadius='48%' [palettes]="palette">
             </e-accumulation-series>
         </e-accumulation-series-collection>
     </ejs-accumulationchart>
+</div>
+<div class="Chart-2">
+
 </div>
