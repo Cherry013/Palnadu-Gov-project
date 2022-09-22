@@ -16,9 +16,9 @@ export class ChartsCComponent implements OnInit {
   ngOnInit(): void {
     this.piedata=[
       {x:'Begging',y:15},{x:'Hotel',y:25},
-      {x:'shop/pvt-Sector',y:35},{x:'Railway Station',y:'{{rail}}'},
-      {x:'Brick klins',y:'{{brick}}'},{x:'Factories',y:'{{Factories}}'},{x:'Constrction Workers',y:'{{Construction}}'},
-      {x:'Others',y:'{{other}}'}
+      {x:'shop/pvt-Sector',y:35},{x:'Railway Station',y:10},
+      {x:'Brick klins',y:15},{x:'Factories',y:20},{x:'Constrction Workers',y:22},
+      {x:'Others',y:25}
     ];
     this.legendSettings = { vsible:false };
     this.tooltip = { enable:true,
@@ -28,6 +28,6 @@ export class ChartsCComponent implements OnInit {
         color:'black'
       }
     };
-    this.palette = ["#29c2ac", "#fe9496", "#4bcbeb"]
+    this.palette = []
   }
 }

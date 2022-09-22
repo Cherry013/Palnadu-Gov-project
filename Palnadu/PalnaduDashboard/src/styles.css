@@ -1,45 +1,92 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Buhid&family=Roboto+Mono:wght@500&display=swap');
-
-.w-10 {
-    width: 200px;
-}
-.r-30{
-    border-radius: 30%;
-}
-.overflow-hidden {
-    height: 100vh;
-    overflow-y: hidden;
-    overflow-x: scroll;
-}
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
 
 
-.overflow-scroll {
-    overflow: scroll;
-}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}   
 
-.w-100 {
-    width: 100%;
-}
+/* MEDIAS for responsive designing */
 
-.r-50 {
-    border-radius: 50%;
-}
+/* for 480px (mobiles) */
 
-.wh-150 {
-    height: 150px;
-    width: 200px;
-}
+@media screen and (max-width: 480px) {
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    .container{
+        display: block;
+    }
+    .section{
+        display: flex;
+        flex-direction: column-reverse; 
+    }
+    .nav{
+        box-shadow: none;
+    } 
+    .nav .p{
+        text-align: center;
+        font-size: 20px;
+        margin: 0;
+        padding: 0;
+        word-spacing: 3px;
+    }
+    .dash{
+        display: none;
+    }
+    .nav img{
+        display: none;
+    }
+    .sub-container-1{
+        display: none;
+    }
+    .container{
+        margin: 10px;
+        padding: 0;
+    }
+    .main-row{
+        display: block;
+    }
+    .main-card{
+        margin: 5px;
+        width: 340px;
+    }
+    .card{
+        margin: 2px;
+        width: 170px;
+    }
+    .section{
+        margin: 15px 0 0 0;
+    }
+    .slide{
+        width: 200px;
+        transform: translate(-200px);
+        transition: 0.3s;
+    }
+    .slide .Nnav a{
+        font-size: 18px;
+        padding: 10px 0 10px 30px;
+    }
+} 
 
-.center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.Roboto {
-    font-family: 'Roboto Mono', monospace;
-}
-
-.Noto {
-    font-family: 'Noto Sans Buhid', sans-serif;
+/* for 1920 * 1080 (computers)*/
+@media screen and (max-width: 1920px) {
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    .slide{
+        width: 300px;
+        transform: translate(-300px);
+        transition: 0.3s;
+    }
+    .slide .Nnav a{
+        font-size: 25px;
+        padding: 10px 0 10px 50px;
+    }
 }

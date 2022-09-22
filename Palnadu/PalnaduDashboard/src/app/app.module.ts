@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AccumulationChartModule } from '@syncfusion/ej2-angular-charts';
+import { CalendarModule } from '@syncfusion/ej2-angular-calendars';
 
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
@@ -29,7 +30,8 @@ import { AccumulationAnnotationService, AccumulationDataLabelService, Accumulati
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    AccumulationChartModule
+    AccumulationChartModule,
+    CalendarModule
   ],
   providers: [GetvaluesService,FormsModule, PieSeriesService, AccumulationLegendService, 
     AccumulationTooltipService, AccumulationAnnotationService, AccumulationDataLabelService],

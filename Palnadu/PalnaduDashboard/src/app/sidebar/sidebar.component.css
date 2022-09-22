@@ -1,17 +1,42 @@
-.logo {
-    height: 100px;
-    width: 90px;
+.slide{
+    height: 700px;
+    width: 250px;
+    transform: translate(-250px);
+    transition: 0.5s;
+    overflow: scroll;
+    background: white;
+}
+.side label{
+    margin-left: 20px;
+}
+.side label i{
+    font-size: 23px;
+}
+input:checked ~ .slide{
+    transition: 0.5s;
+    transform: translate(0);
+}
+.side input[type="checkbox"]{
+    display: none;
 }
 
-.Ploc {
-    font-size: 19px;
+.slide .Nnav{
+    padding-top: 10px;
 }
-.Iloc {
-    font-size: 15px;
+.slide .Nnav a{
+    font-family: 'Abel', sans-serif;
+    text-decoration: none;
+    color: black;
+    width: 250px;
+    letter-spacing: 1px;
+    
 }
-.list-group a:hover{
-    background-color: #198754fb;
-    color: var(--bs-white);
+.slide .Nnav a i{
+    font-size: 13px;
+    padding: 0 15px 0 0;
+}
+.slide .Nnav a:hover{
+    color: white;
     transition: 0.2s;
+    background: #000;
 }
-

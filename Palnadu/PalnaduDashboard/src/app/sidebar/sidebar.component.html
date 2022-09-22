@@ -1,120 +1,69 @@
-<div id="sidebar" class="collapse collapse-horizontal show border-end">
-    <div class="w-10 mx-3">
-        <img class="logo" src="https://cracku.in/latest-govt-jobs/wp-content/uploads/2019/07/AP-Govt-Logo.png" alt="Governament of Andhra Pradesh" >
-    </div>
-    <div id="sidebar-nav " class="w-10  list-group border-0 rounded-0 text-sm-start ">
-        <a class="list-group-item border-0 d-inline-block text-truncate py-3 px-4"
-            (click)='changeClass("Palndu")' data-bs-parent="#sidebar"><i
-                class="Ploc fa-solid fa-location"></i><span class="mx-1">Palnadu</span> </a>
-        <a  class="list-group-item border-0 d-inline-block text-truncate py-3 px-4"
-            (click)='changeClass("Achampeta")'data-bs-parent="#sidebar">
-            <i class=" Iloc fa-solid fa-location"></i><span class="mx-1">Achampeta</span> </a>
-        <a  class="list-group-item border-0 d-inline-block text-truncate py-3 px-4"
-            (click)='changeClass("Amaravati")' data-bs-parent="#sidebar">
-            <i class=" Iloc fa-solid fa-location"></i><span class="mx-1">Amaravati</span> </a>
-        <a (click)='changeClass("Bellamkonda")'
-            class="list-group-item border-0 d-inline-block text-truncate py-3 px-4"
-            data-bs-parent="#sidebar"><i class=" Iloc fa-solid fa-location"></i><span
-                class="mx-1">Bellamkonda</span> </a>
-        <a (click)='changeClass("Bollapalli")'
-            class="list-group-item border-0 d-inline-block text-truncate py-3 px-4"
-            data-bs-parent="#sidebar"><i class=" Iloc fa-solid fa-location"></i><span
-                class="mx-1">Bollapalli</span> </a>
-        <a (click)='changeClass("Chilakaluripet")'
-            class="list-group-item border-0 d-inline-block text-truncate py-3 px-4"
-            data-bs-parent="#sidebar"><i class=" Iloc fa-solid fa-location"></i><span
-                class="mx-1">Chilakaluripet</span> </a>
-        <a (click)='changeClass("Dachepalli")'
-            class="list-group-item border-0 d-inline-block text-truncate py-3 px-4"
-            data-bs-parent="#sidebar"><i class=" Iloc fa-solid fa-location"></i><span
-                class="mx-1">Dachepalli</span> </a>
-        <a (click)='changeClass("Durgi")'
-            class="list-group-item border-0 d-inline-block text-truncate py-3 px-4"
-            data-bs-parent="#sidebar"><i class=" Iloc fa-solid fa-location"></i><span
-                class="mx-1">Durgi</span></a>
-        <a (click)='changeClass("Edlapadu")'
-            class="list-group-item border-0 d-inline-block text-truncate py-3 px-4"
-            data-bs-parent="#sidebar"><i class=" Iloc fa-solid fa-location"></i><span
-                class="mx-1">Edlapadu</span> </a>
-        <a (click)='changeClass("Gurazala")'
-            class="list-group-item border-0 d-inline-block text-truncate py-3 px-4"
-            data-bs-parent="#sidebar"><i class=" Iloc fa-solid fa-location"></i><span
-                class="mx-1">Gurazala</span> </a>
-        <a (click)='changeClass("Ipuru")'
-            class="list-group-item border-0 d-inline-block text-truncate py-3 px-4"
-            data-bs-parent="#sidebar"><i class=" Iloc fa-solid fa-location"></i><span
-                class="mx-1">Ipuru</span></a>
-        <a (click)='changeClass("Karempudi")'
-            class="list-group-item border-0 d-inline-block text-truncate py-3 px-4"
-            data-bs-parent="#sidebar"><i class=" Iloc fa-solid fa-location"></i><span
-                class="mx-1">Karempudi</span> </a>
-        <a (click)='changeClass("Krosuru")'
-            class="list-group-item border-0 d-inline-block text-truncate py-3 px-4"
-            data-bs-parent="#sidebar"><i class=" Iloc fa-solid fa-location"></i><span
-                class="mx-1">Krosuru</span></a>
-        <a (click)='changeClass("Machavaram")'
-            class="list-group-item border-0 d-inline-block text-truncate py-3 px-4"
-            data-bs-parent="#sidebar"><i class=" Iloc fa-solid fa-location"></i><span
-                class="mx-1">Machavaram</span> </a>
-        <a (click)='changeClass("Macherla")'
-            class="list-group-item border-0 d-inline-block text-truncate py-3 px-4"
-            data-bs-parent="#sidebar"><i class=" Iloc fa-solid fa-location"></i><span
-                class="mx-1">Macherla</span> </a>
-        <a (click)='changeClass("Muppalla")'
-            class="list-group-item border-0 d-inline-block text-truncate py-3 px-4"
-            data-bs-parent="#sidebar"><i class=" Iloc fa-solid fa-location"></i><span
-                class="mx-1">Muppalla</span> </a>
-        <a (click)='changeClass("Nadendla")'
-            class="list-group-item border-0 d-inline-block text-truncate py-3 px-4"
-            data-bs-parent="#sidebar"><i class=" Iloc fa-solid fa-location"></i><span
-                class="mx-1">Nadendla</span> </a>
-        <a (click)='changeClass("Narasaraopet")'
-            class="list-group-item border-0 d-inline-block text-truncate py-3 px-4"
-            data-bs-parent="#sidebar"><i class=" Iloc fa-solid fa-location"></i><span
-                class="mx-1">Narasaraopet</span> </a>
-        <a (click)='changeClass("Nekarikallu")'
-            class="list-group-item border-0 d-inline-block text-truncate py-3 px-4"
-            data-bs-parent="#sidebar"><i class=" Iloc fa-solid fa-location"></i><span
-                class="mx-1">Nekarikallu</span> </a>
-        <a (click)='changeClass("Nuzendla")'
-            class="list-group-item border-0 d-inline-block text-truncate py-3 px-4"
-            data-bs-parent="#sidebar"><i class=" Iloc fa-solid fa-location"></i><span
-                class="mx-1">Nuzendla</span> </a>
-        <a (click)='changeClass("Pedakurapadu")'
-            class="list-group-item border-0 d-inline-block text-truncate py-3 px-4"
-            data-bs-parent="#sidebar"><i class=" Iloc fa-solid fa-location"></i><span
-                class="mx-1">Pedakurapadu</span> </a>
-        <a (click)='changeClass("Piduguralla")'
-            class="list-group-item border-0 d-inline-block text-truncate py-3 px-4"
-            data-bs-parent="#sidebar"><i class=" Iloc fa-solid fa-location"></i><span
-                class="mx-1">Piduguralla</span> </a>
-        <a (click)='changeClass("Rajupalem")'
-            class="list-group-item border-0 d-inline-block text-truncate py-3 px-4"
-            data-bs-parent="#sidebar"><i class=" Iloc fa-solid fa-location"></i><span
-                class="mx-1">Rajupalem</span> </a>
-        <a (click)='changeClass("Rentachintala")'
-            class="list-group-item border-0 d-inline-block text-truncate py-3 px-4"
-            data-bs-parent="#sidebar"><i class=" Iloc fa-solid fa-location"></i><span
-                class="mx-1">Rentachintala</span> </a>
-        <a (click)='changeClass("Rompicherla")'
-            class="list-group-item border-0 d-inline-block text-truncate py-3 px-4"
-            data-bs-parent="#sidebar"><i class=" Iloc fa-solid fa-location"></i><span
-                class="mx-1">Rompicherla</span> </a>
-        <a (click)='changeClass("Sattenapalle")'
-            class="list-group-item border-0 d-inline-block text-truncate py-3 px-4"
-            data-bs-parent="#sidebar"><i class=" Iloc fa-solid fa-location"></i><span
-                class="mx-1">Sattenapalle</span> </a>
-        <a (click)='changeClass("Savalyapuram")'
-            class="list-group-item border-0 d-inline-block text-truncate py-3 px-4"
-            data-bs-parent="#sidebar"><i class=" Iloc fa-solid fa-location"></i><span
-                class="mx-1">Savalyapuram</span> </a>
-        <a (click)='changeClass("Veldurthy")'
-            class="list-group-item border-0 d-inline-block text-truncate py-3 px-4"
-            data-bs-parent="#sidebar"><i class=" Iloc fa-solid fa-location"></i><span
-                class="mx-1">Veldurthy</span> </a>
-        <a (click)='changeClass("Vinukonda")'
-            class="list-group-item border-0 d-inline-block text-truncate py-3 px-4"
-            data-bs-parent="#sidebar"><i class=" Iloc fa-solid fa-location"></i><span
-                class="mx-1">Vinukonda</span> </a>
+<div class="side">
+    <input type="checkbox" id="ham">
+    <label for="ham" class="d-flex py-auto"><i class="fa-solid fa-bars"></i></label>
+        
+    <div class="slide">
+        <div class="Nnav">
+            <nav>
+            <a class="list-group-item border-0 d-inline-block py-3 px-4" (click)='changeClass("Palndu")' data-bs-parent="#sidebar">
+                <i class="Ploc fa-solid fa-location"></i><span class="mx-1">Palnadu</span> </a>
+            <a  class="list-group-item border-0 d-inline-block py-3 px-4" (click)='changeClass("Achampeta")' data-bs-parent="#sidebar">
+                <i class=" Iloc fa-solid fa-location"></i><span class="mx-1">Achampeta</span> </a>
+            <a  class="list-group-item border-0 d-inline-block py-3 px-4" (click)='changeClass("Amaravati")' data-bs-parent="#sidebar">
+                <i class=" Iloc fa-solid fa-location"></i><span class="mx-1">Amaravati</span> </a>
+            <a class="list-group-item border-0 d-inline-block py-3 px-4" (click)='changeClass("Bellamkonda")' data-bs-parent="#sidebar">
+                <i class=" Iloc fa-solid fa-location"></i><span class="mx-1">Bellamkonda</span> </a>
+            <a class="list-group-item border-0 d-inline-block py-3 px-4" (click)='changeClass("Bollapalli")' data-bs-parent="#sidebar">
+                <i class=" Iloc fa-solid fa-location"></i><span class="mx-1">Bollapalli</span> </a>
+            <a class="list-group-item border-0 d-inline-block py-3 px-4" (click)='changeClass("Chilakaluripet")' data-bs-parent="#sidebar">
+                <i class=" Iloc fa-solid fa-location"></i><span class="mx-1">Chilakaluripet</span> </a>
+            <a class="list-group-item border-0 d-inline-block py-3 px-4" (click)='changeClass("Dachepalli")' data-bs-parent="#sidebar">
+                <i class=" Iloc fa-solid fa-location"></i><span class="mx-1">Dachepalli</span> </a>
+            <a class="list-group-item border-0 d-inline-block py-3 px-4" (click)='changeClass("Durgi")' data-bs-parent="#sidebar">
+                <i class=" Iloc fa-solid fa-location"></i><span class="mx-1">Durgi</span></a>
+            <a class="list-group-item border-0 d-inline-block py-3 px-4" (click)='changeClass("Edlapadu")' data-bs-parent="#sidebar">
+                <i class=" Iloc fa-solid fa-location"></i><span class="mx-1">Edlapadu</span> </a>
+            <a class="list-group-item border-0 d-inline-block py-3 px-4" (click)='changeClass("Gurazala")' data-bs-parent="#sidebar">
+                <i class=" Iloc fa-solid fa-location"></i><span class="mx-1">Gurazala</span> </a>
+            <a class="list-group-item border-0 d-inline-block py-3 px-4" (click)='changeClass("Ipuru")' data-bs-parent="#sidebar">
+                <i class=" Iloc fa-solid fa-location"></i><span class="mx-1">Ipuru</span></a>
+            <a class="list-group-item border-0 d-inline-block py-3 px-4" (click)='changeClass("Karempudi")' data-bs-parent="#sidebar">
+                <i class=" Iloc fa-solid fa-location"></i><span class="mx-1">Karempudi</span> </a>
+            <a class="list-group-item border-0 d-inline-block py-3 px-4" (click)='changeClass("Krosuru")' data-bs-parent="#sidebar">
+                <i class=" Iloc fa-solid fa-location"></i><span class="mx-1">Krosuru</span></a>
+            <a class="list-group-item border-0 d-inline-block py-3 px-4" (click)='changeClass("Machavaram")' data-bs-parent="#sidebar">
+                <i class=" Iloc fa-solid fa-location"></i><span class="mx-1">Machavaram</span> </a>
+            <a class="list-group-item border-0 d-inline-block py-3 px-4" (click)='changeClass("Macherla")' data-bs-parent="#sidebar">
+                <i class=" Iloc fa-solid fa-location"></i><span class="mx-1">Macherla</span> </a>
+            <a class="list-group-item border-0 d-inline-block py-3 px-4" (click)='changeClass("Muppalla")' data-bs-parent="#sidebar">
+                <i class=" Iloc fa-solid fa-location"></i><span class="mx-1">Muppalla</span> </a>
+            <a class="list-group-item border-0 d-inline-block py-3 px-4" (click)='changeClass("Nadendla")' data-bs-parent="#sidebar">
+                <i class=" Iloc fa-solid fa-location"></i><span class="mx-1">Nadendla</span> </a>
+            <a class="list-group-item border-0 d-inline-block py-3 px-4" (click)='changeClass("Narasaraopet")' data-bs-parent="#sidebar">
+                <i class=" Iloc fa-solid fa-location"></i><span class="mx-1">Narasaraopet</span> </a>
+            <a class="list-group-item border-0 d-inline-block py-3 px-4" (click)='changeClass("Nekarikallu")' data-bs-parent="#sidebar">
+                <i class=" Iloc fa-solid fa-location"></i><span class="mx-1">Nekarikallu</span> </a>
+            <a class="list-group-item border-0 d-inline-block py-3 px-4" (click)='changeClass("Nuzendla")' data-bs-parent="#sidebar">
+                <i class=" Iloc fa-solid fa-location"></i><span class="mx-1">Nuzendla</span> </a>
+            <a class="list-group-item border-0 d-inline-block py-3 px-4" (click)='changeClass("Pedakurapadu")' data-bs-parent="#sidebar">
+                <i class=" Iloc fa-solid fa-location"></i><span class="mx-1">Pedakurapadu</span> </a>
+            <a class="list-group-item border-0 d-inline-block py-3 px-4" (click)='changeClass("Piduguralla")' data-bs-parent="#sidebar">
+                <i class=" Iloc fa-solid fa-location"></i><span class="mx-1">Piduguralla</span> </a>
+            <a class="list-group-item border-0 d-inline-block py-3 px-4" (click)='changeClass("Rajupalem")' data-bs-parent="#sidebar">
+                <i class=" Iloc fa-solid fa-location"></i><span class="mx-1">Rajupalem</span> </a>
+            <a class="list-group-item border-0 d-inline-block py-3 px-4" (click)='changeClass("Rentachintala")' data-bs-parent="#sidebar">
+                <i class=" Iloc fa-solid fa-location"></i><span class="mx-1">Rentachintala</span> </a>
+            <a class="list-group-item border-0 d-inline-block py-3 px-4" (click)='changeClass("Rompicherla")' data-bs-parent="#sidebar">
+                <i class=" Iloc fa-solid fa-location"></i><span class="mx-1">Rompicherla</span> </a>
+            <a class="list-group-item border-0 d-inline-block py-3 px-4" (click)='changeClass("Sattenapalle")' data-bs-parent="#sidebar">
+                <i class=" Iloc fa-solid fa-location"></i><span class="mx-1">Sattenapalle</span> </a>
+            <a class="list-group-item border-0 d-inline-block py-3 px-4" (click)='changeClass("Savalyapuram")' data-bs-parent="#sidebar">
+                <i class=" Iloc fa-solid fa-location"></i><span class="mx-1">Savalyapuram</span> </a>
+            <a class="list-group-item border-0 d-inline-block py-3 px-4" (click)='changeClass("Veldurthy")' data-bs-parent="#sidebar">
+                <i class=" Iloc fa-solid fa-location"></i><span class="mx-1">Veldurthy</span> </a>
+            <a class="list-group-item border-0 d-inline-block py-3 px-4" (click)='changeClass("Vinukonda")' data-bs-parent="#sidebar">
+                <i class=" Iloc fa-solid fa-location"></i><span class="mx-1">Vinukonda</span> </a>
+            </nav>
+        </div>
     </div>
 </div>

@@ -1,85 +1,93 @@
-<div class="container-fluid">
-    <div class="row flex-nowrap">
-        <div class="col-auto px-0 overflow-scroll">
-            <app-sidebar (Senddata)="taking($event)"></app-sidebar>
+<div class="container-fluid p-0">
+    <div class="">
+        <div class="nav col ps-md-2 pt-2">
+            <div class="sidebar overflow-scroll" >
+                <app-sidebar></app-sidebar>
+            </div>
+            <p class="m-0">Government of Andhra Pradesh</p>
+            <div class="user center border border-warning"></div>
         </div>
-        <main class="col ps-md-2 pt-2">
-            <nav class="navbar navbar-light bg-light">
-                <div class="container-fluid d-flex justify-content-space-between align-items-center">
-                    <a (click)="Toggle()" data-bs-target="#sidebar" data-bs-toggle="collapse"
-                        class="cbtn border rounded-3 p-1 text-decoration-none float-right px-2"><i [class]="Right"></i></a>
-                    <div class="govt">Street Children Information</div>
-                    <div class="userdetails center">
-                        <p class="username m-0 mx-2 Noto">{{Username}}</p>
-                        <div class="user center r-50 border border-warning"></div>
+        <div class="container">
+            <div class="sub-container-1">
+                <div class="report"></div>
+            </div>
+
+            <div class="sub-container-2">
+                <div class="main-row">
+                    <div class="main-card name-l main-clr">
+                        <p>{{Total_reports}}</p>
+                        <p>Total reports</p>
+                    </div>
+                    <div class="main-card name-l main-clr">
+                        <p>{{Today_reports}}</p>
+                        <p>Todays reports</p>
+                    </div>
+                    <div class="main-card">
+
                     </div>
                 </div>
 
-            </nav>
-            <div class="p-1 w-100 my-3 grid">
-                <!-- <div class="card mx-1  wh-150 center border border-2 border-primary text-white my-2 bg-primary">
-                    <p class="m-0 ">20</p>
-                    <span class="m-0 Noto">Mandal</span>
+                <div class="section">
+
+                    <!-- charts start -->
+                    <div class="chart">
+                        <app-charts-c></app-charts-c>
+                    </div>
+
+
+                    <div class="rows">
+                        <div class="fst-row">
+                            <div class="fst-row-1">
+                                <div class="card name-s clr-beg">
+                                    <p class="">{{Hotels}}</p>
+                                    <p>begging</p>
+                                </div>
+                                <div class="card name-s clr-htl">
+                                    <p class="">{{Hotels}}</p>
+                                    <p>hotel</p>
+                                </div>
+                            </div>
+                            <div class="fst-row-2">
+                                <div class="card name-s clr-shop">
+                                    <p class="">{{pvt}}</p>
+                                    <p>shop/pvt sector</p>
+                                </div>
+                                <div class="card name-s clr-rail">
+                                    <p class="">{{rail}}</p>
+                                    <p>railway station</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sec-row">
+                            <div class="sec-row-1">
+                                <div class="card name-s clr-brk">
+                                    <p class="">{{brick}}</p>
+                                    <p>brick klims</p>
+                                </div>
+                                <div class="card name-s clr-fact">
+                                    <p class="">{{Factories}}</p>
+                                    <p>factories</p>
+                                </div>
+                            </div>
+                            <div class="sec-row-2">
+                                <div class="card name-s clr-cons">
+                                    <p class="">{{Construction}}</p>
+                                    <p>construction</p>
+                                </div>
+                                <div class="card name-s clr-oth">
+                                    <p class="">{{other}}</p>
+                                    <p>others</p>
+                            </div>
+                        </div>
+
+                    </div>
+
                 </div>
-                <div class="card mx-1  wh-150 center border border-warning text-white my-2 bg-warning">
-                    <p class="m-0 ">20</p>
-                    <span class="m-0 Noto">Total Count</span>
-                </div>
-                <div class="card mx-1  wh-150 center border border-success text-white my-2 bg-success">
-                    <p class="m-0 ">20</p>
-                    <span class="m-0 Noto">Total Reports</span>
-                </div>
-                <div class="card mx-1  wh-150 center border border-danger text-white my-2 bg-danger">
-                    <p class="m-0 ">15</p>
-                    <span class="m-0 Noto text-center">Todays<br> Reports</span>
-                </div> -->
-                <div class="card mx-1 wh-150 center border  border-pink text-white my-2 bg-pink">
-                    <p class="m-0 ">{{Begging}}</p>
-                    <span class="m-o Noto">Begging</span>
-                </div>
-                <div class="card mx-1 wh-150 center border border-2 border-primary text-white my-2 bg-primary">
-                    <p class="m-0 ">{{Hotels}}</p>
-                    <span class="m-o Noto">Working at Hotel</span>
-                </div>
-                <div class="card mx-1  wh-150 center border border-warning text-white my-2 bg-warning">
-                    <p class="m-0 ">{{pvt}}</p>
-                    <span class="m-0 Noto text-center">Shop/PVT sector</span>
-                </div>
-                <div class="card mx-1  wh-150 center border border-success text-white my-2 bg-success">
-                    <p class="m-0 ">{{rail}}</p>
-                    <span class="m-0 Noto">Railway Station</span>
-                </div>
-                <div class="card mx-1  wh-150 center border border-danger text-white my-2 bg-danger">
-                    <p class="m-0 ">{{brick}}</p>
-                    <span class="m-0 Noto">Brick klins</span>
-                </div>
-                <div class="card mx-1  wh-150 center border border-pink text-white my-2 bg-pink">
-                    <p class="m-0 ">{{Factories}}</p>
-                    <span class="m-0 Noto">Factories</span>
-                </div>
-                <div class="card mx-1  wh-150 center border border-primary text-white my-2 bg-primary">
-                    <p class="m-0 ">{{Construction}}</p>
-                    <span class="m-0 Noto">Constrction Workers</span>
-                </div>
-                <div class="card mx-1  wh-150 center border border-warning text-white my-2 bg-warning">
-                    <p class="m-0 ">{{other}}</p>
-                    <span class="m-0 Noto">Others</span>
-                </div>
+
             </div>
-            <hr>
-            <div class="Inputs">
-                <div class="d-flex">
-                    <select class="form-control">
-                        <option value="SC">SC</option>
-                        <option value="ST">ST</option>
-                        <option value="BC">BC</option>
-                        <option value="OC">OC</option>
-                    </select>
-                </div>
-            </div>
-            <div>
-               <app-charts-c></app-charts-c> 
-            </div>
-        </main>
+
+
+
+        </div>
     </div>
 </div>
