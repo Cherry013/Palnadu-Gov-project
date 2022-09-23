@@ -8,12 +8,8 @@
             <div class="user center border border-warning"></div>
         </div>
         <div class="container">
-            <div class="sub-container-1">
-                <div class="report"></div>
-            </div>
-
-            <div class="sub-container-2">
-                <div class="main-row">
+            <div class="sub-container grid">
+                <div class="main-div grid-1">
                     <div class="main-card name-l main-clr">
                         <p>{{Total_reports}}</p>
                         <p>Total reports</p>
@@ -22,71 +18,47 @@
                         <p>{{Today_reports}}</p>
                         <p>Todays reports</p>
                     </div>
-                    <div class="main-card">
-
-                    </div>
                 </div>
-
-                <div class="section">
-
-                    <!-- charts start -->
-                    <div class="chart">
-                        <app-charts-c></app-charts-c>
-                    </div>
-
-
-                    <div class="rows">
-                        <div class="fst-row">
-                            <div class="fst-row-1">
-                                <div class="card name-s clr-beg">
-                                    <p class="">{{Hotels}}</p>
-                                    <p>begging</p>
-                                </div>
-                                <div class="card name-s clr-htl">
-                                    <p class="">{{Hotels}}</p>
-                                    <p>hotel</p>
-                                </div>
-                            </div>
-                            <div class="fst-row-2">
-                                <div class="card name-s clr-shop">
-                                    <p class="">{{pvt}}</p>
-                                    <p>shop/pvt sector</p>
-                                </div>
-                                <div class="card name-s clr-rail">
-                                    <p class="">{{rail}}</p>
-                                    <p>railway station</p>
-                                </div>
-                            </div>
+                
+                    <div class="grid-2 span-row-2">
+                        <div class="card name-s clr-beg">
+                            <p class="">{{Hotels}}</p>
+                            <p>begging</p>
                         </div>
-                        <div class="sec-row">
-                            <div class="sec-row-1">
-                                <div class="card name-s clr-brk">
-                                    <p class="">{{brick}}</p>
-                                    <p>brick klims</p>
-                                </div>
-                                <div class="card name-s clr-fact">
-                                    <p class="">{{Factories}}</p>
-                                    <p>factories</p>
-                                </div>
-                            </div>
-                            <div class="sec-row-2">
-                                <div class="card name-s clr-cons">
-                                    <p class="">{{Construction}}</p>
-                                    <p>construction</p>
-                                </div>
-                                <div class="card name-s clr-oth">
-                                    <p class="">{{other}}</p>
-                                    <p>others</p>
-                            </div>
+                        <div class="card name-s clr-htl">
+                            <p class="">{{Hotels}}</p>
+                            <p>hotel</p>
                         </div>
-
+                        <div class="card name-s clr-shop">
+                            <p class="">{{pvt}}</p>
+                            <p>shop/pvt sector</p>
+                        </div>
+                        <div class="card name-s clr-rail">
+                            <p class="">{{rail}}</p>
+                            <p>railway station</p>
+                        </div>
+                        <div class="card name-s clr-brk">
+                            <p class="">{{brick}}</p>
+                            <p>brick klims</p>
+                        </div>
+                        <div class="card name-s clr-fact">
+                            <p class="">{{Factories}}</p>
+                            <p>factories</p>
+                        </div>
+                        <div class="card name-s clr-cons">
+                            <p class="">{{Construction}}</p>
+                            <p>construction</p>
+                        </div>
+                        <div class="card name-s clr-oth">
+                            <p class="">{{other}}</p>
+                            <p>others</p>
+                        </div>
                     </div>
-
-                </div>
+                
+                <div class="bar-chart"><app-bar-chart></app-bar-chart></div>
+                
 
             </div>
-
-
 
         </div>
     </div>

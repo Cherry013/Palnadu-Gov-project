@@ -56,27 +56,22 @@
 /* dashboard parent container (.container) */
 
 .container{
-   display: flex; 
-   margin: 10px 0 0 80px;
+   display: flex;
+   margin: 10px 0 0 10px;
 }
 
 /* reports */
-.sub-container-1{
-    width: 370px;
-    height: 900px;
-}
+
 /* side division of container (without reports) */
-.sub-container-2{
+.sub-container{
     margin: 25px 0 0 1px;
 }
-.main-row{
-    display: flex;
-}
+
 .main-card{
     box-sizing: border-box;
     height: 200px;
     width: 400px;
-    margin: 0 0 0 45px;
+    margin: 0 0 0 20px;
     border-radius: 15px;
 }
 .card{
@@ -103,30 +98,6 @@
     letter-spacing: 2px;
     font-family: 'Quicksand', sans-serif;
 }
-.section{
-    display: flex;
-    margin: 25px;
-}
-.chart{
-    width: 300px;
-    height: 600px;
-    margin: 25px;
-}
-.fst-row{
-    display: flex;
-}
-.sec-row{
-    display: flex;
-}
-
-
-
-
-/* sidebar / slide */
-
-
-
-
 
 /* colors */
 
@@ -161,3 +132,57 @@
     background-image: linear-gradient(90deg, #ffbdd3 40%, #6ae9e5);  
 }
 
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+.span-col-2{grid-column: span 2 / auto;}
+.span-row-2{grid-row: span 2 / auto;}
+
+.grid-1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px;
+}
+
+@media only screen and (max-width:320px){
+    .nav{
+        box-shadow: none;
+        width: auto;
+        display: flex;
+    }
+    .nav p{
+        font-size: 10px;
+        letter-spacing: 0;
+    }
+    .user {
+        display: none;
+    }
+    .container{
+        display: block;
+    }
+    .grid-1, .grid-2{
+        display: block;
+    }
+    .main-div{
+        display: block;
+    }
+    .sub-container{
+        display: block;
+    }
+    .main-card{
+        width: 250px;
+        margin: 3px;
+    }
+    .bar-chart{
+        display: none;
+    }
+}

@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { ChartModule } from '@syncfusion/ej2-angular-charts';
 import { AccumulationChartModule } from '@syncfusion/ej2-angular-charts';
 import { CalendarModule } from '@syncfusion/ej2-angular-calendars';
 
@@ -12,9 +13,11 @@ import { DashboardviewComponent } from './dashboardview/dashboardview.component'
 import { TablesComponent } from './tables/tables.component';
 import { GetvaluesService } from './getvalues.service';
 import { HttpClientModule } from '@angular/common/http';
-import { ChartsCComponent } from './charts-c/charts-c.component';
-import { AccumulationAnnotationService, AccumulationDataLabelService, AccumulationLegendService,
-   AccumulationTooltipService, PieSeriesService } from '@syncfusion/ej2-angular-charts';
+import { CategoryService, ChartAnnotationService, ColumnSeriesService, DateTimeService, LegendService, 
+  LineSeriesService, RangeColumnSeriesService, ScrollBarService, StackingColumnSeriesService, TooltipService } from '@syncfusion/ej2-angular-charts';
+import { BarChartComponent } from './bar-chart/bar-chart.component';
+import { DateFormatOptions } from '@syncfusion/ej2-base'
+
 
 
 @NgModule({
@@ -24,17 +27,16 @@ import { AccumulationAnnotationService, AccumulationDataLabelService, Accumulati
     SidebarComponent,
     DashboardviewComponent,
     TablesComponent,
-    ChartsCComponent
+    BarChartComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    AccumulationChartModule,
-    CalendarModule
+    ChartModule
   ],
-  providers: [GetvaluesService,FormsModule, PieSeriesService, AccumulationLegendService, 
-    AccumulationTooltipService, AccumulationAnnotationService, AccumulationDataLabelService],
+  providers: [GetvaluesService,FormsModule, CategoryService, DateTimeService, ScrollBarService, LineSeriesService, ColumnSeriesService, 
+    ChartAnnotationService, RangeColumnSeriesService, StackingColumnSeriesService, LegendService, TooltipService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
