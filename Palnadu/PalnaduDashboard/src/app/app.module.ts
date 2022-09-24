@@ -13,8 +13,9 @@ import { DashboardviewComponent } from './dashboardview/dashboardview.component'
 import { TablesComponent } from './tables/tables.component';
 import { GetvaluesService } from './getvalues.service';
 import { HttpClientModule } from '@angular/common/http';
-import { CategoryService, ChartAnnotationService, ColumnSeriesService, DateTimeService, LegendService, 
-  LineSeriesService, RangeColumnSeriesService, ScrollBarService, StackingColumnSeriesService, TooltipService } from '@syncfusion/ej2-angular-charts';
+import { CategoryService, DateTimeService, ScrollBarService, ColumnSeriesService, LineSeriesService, 
+  ChartAnnotationService, RangeColumnSeriesService, StackingColumnSeriesService,LegendService, TooltipService
+} from '@syncfusion/ej2-angular-charts';
 import { BarChartComponent } from './bar-chart/bar-chart.component';
 import { DateFormatOptions } from '@syncfusion/ej2-base'
 
