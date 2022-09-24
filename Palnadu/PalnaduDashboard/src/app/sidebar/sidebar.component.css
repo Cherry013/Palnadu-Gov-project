@@ -1,7 +1,7 @@
 .slide{
     height: 700px;
-    width: 250px;
-    transform: translate(-250px);
+    width: 240px;
+    transform: translate(-240px);
     transition: 0.5s;
     overflow: scroll;
     background: white;
@@ -25,6 +25,7 @@ input:checked ~ .slide{
 }
 .slide .Nnav a{
     font-family: 'Abel', sans-serif;
+    font-size: 25px;
     text-decoration: none;
     color: black;
     width: 250px;
@@ -32,7 +33,7 @@ input:checked ~ .slide{
     
 }
 .slide .Nnav a i{
-    font-size: 13px;
+    font-size: 17px;
     padding: 0 15px 0 0;
 }
 .slide .Nnav a:hover{

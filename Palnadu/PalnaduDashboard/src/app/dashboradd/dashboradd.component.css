@@ -46,23 +46,12 @@
     text-transform: uppercase;
 }
 
-/* navbar content ends */
-/* ---------------- navbar ends ------------------- */
-
-
-
-
-/* dashboard view */
-/* dashboard parent container (.container) */
 
 .container{
    display: flex;
    margin: 10px 0 0 10px;
 }
 
-/* reports */
-
-/* side division of container (without reports) */
 .sub-container{
     margin: 25px 0 0 1px;
 }
@@ -153,6 +142,54 @@
     grid-gap: 5px;
 }
 
+
+
+
+@media only screen and (max-width: 501px){
+    .container-fluid {
+        width: 500px;
+    }
+    .nav{
+        box-shadow: none;
+        width: auto;
+        display: flex;
+    }
+    .nav p{
+        font-size: 10px;
+        letter-spacing: 0;
+    }
+    .user {
+        display: none;
+    }
+    .container{
+        display: block;
+    }
+    .main-div{
+        display: block;
+        width: 450px;
+    }
+    .sub-container{
+        display: block;
+    }
+    .main-card{
+        width: 200px;
+        height: 150px;
+        margin: 3px;
+    }
+    .name-l{
+        text-align: center;
+        text-transform: uppercase;
+        padding-top: 15px;
+        font-size: 20px;
+        letter-spacing: 2px;
+        font-family: 'Maven Pro', sans-serif;
+    }
+    .bar-chart{
+        display: none;
+    }
+}
+
+
 @media only screen and (max-width:320px){
     .nav{
         box-shadow: none;
@@ -179,7 +216,7 @@
         display: block;
     }
     .main-card{
-        width: 250px;
+        width: 200px;
         margin: 3px;
     }
     .bar-chart{
