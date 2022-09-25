@@ -1,5 +1,12 @@
-<ejs-chart [primaryXAxis]="primaryXAxis">
+<ejs-chart [primaryXAxis]="primaryXAxis" [dataSource]="chartData">
     <e-series-collection>
-        <e-series></e-series>
+        <e-series type='Column' xName='Work' yName='Reports' name='Reports'></e-series>
     </e-series-collection>
 </ejs-chart>
+
+<!--<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis' [dataSource]='chartData'>
+    <e-series-collection>
+        <e-series type='Column' xName='month' yName='sales' name='Sales'></e-series>
+        <e-series type='Column' xName='month' yName='sales1' name='Sales'></e-series>
+    </e-series-collection>
+</ejs-chart>-->

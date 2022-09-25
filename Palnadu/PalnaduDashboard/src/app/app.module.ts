@@ -1,8 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { ChartModule } from '@syncfusion/ej2-angular-charts';
-import { AccumulationChartModule } from '@syncfusion/ej2-angular-charts';
-import { CalendarModule } from '@syncfusion/ej2-angular-calendars';
 
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
@@ -13,7 +10,7 @@ import { DashboardviewComponent } from './dashboardview/dashboardview.component'
 import { TablesComponent } from './tables/tables.component';
 import { GetvaluesService } from './getvalues.service';
 import { HttpClientModule } from '@angular/common/http';
-import { CategoryService, DateTimeService, ScrollBarService, ColumnSeriesService, LineSeriesService, 
+import { ChartModule, CategoryService, DateTimeService, ScrollBarService, ColumnSeriesService, LineSeriesService, 
   ChartAnnotationService, RangeColumnSeriesService, StackingColumnSeriesService,LegendService, TooltipService
 } from '@syncfusion/ej2-angular-charts';
 import { BarChartComponent } from './bar-chart/bar-chart.component';

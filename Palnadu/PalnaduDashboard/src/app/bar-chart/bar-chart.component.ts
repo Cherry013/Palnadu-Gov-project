@@ -7,13 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BarChartComponent implements OnInit {
 
-  constructor() { }
+
 
   public primaryXAxis: Object = { valuetype:'Category' };
   public chartData: Object[] = [];
 
   ngOnInit(): void {
-
+    this.chartData = [
+      { Work:"Begging",Reports:25 },
+      { Work:"Hotels",Reports:15 },
+      { Work:"Shop_PVT",Reports:17 }
+    ];
   }
 
 }
